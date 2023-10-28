@@ -312,10 +312,12 @@ var loadCssChunkCallback = function (parentChunkLoadingFunction, data) {
 	}
 };
 var chunkLoadingGlobal = self['webpackChunkrspack_repro'] = self['webpackChunkrspack_repro'] || [];
+chunkLoadingGlobal.forEach(loadCssChunkCallback.bind(null, 0));
 chunkLoadingGlobal.push = loadCssChunkCallback.bind(
 	null,
 	chunkLoadingGlobal.push.bind(chunkLoadingGlobal)
 );
+
 })();
 // webpack/runtime/jsonp_chunk_loading
 (function() {

@@ -15,6 +15,7 @@ __webpack_require__.d(__webpack_exports__, {
 }
 },
 "./src/render.css": function (module, exports, __webpack_require__) {
+'use strict';
 },
 
 }]);
